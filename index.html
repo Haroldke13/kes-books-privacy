@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Expense Tracker (KES Books) Privacy Policy</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Expense Tracker (KES Books) Privacy Policy</h1>
+</header>
+<h1 id="expense-tracker-kes-books-privacy-policy">Expense Tracker (KES
+Books): Privacy Policy</h1>
+<p><em>Last updated: 8 November 2026</em></p>
+<p>Expense Tracker (“the app”, in-app brand <strong>KES Books</strong>)
+is an on-phone accounting and expense-tracking app for Android,
+published by Joel Harold Onyango (H0J-MQH Holdings Limited). This policy
+explains what the app accesses, why, and where that data goes.</p>
+<p><strong>Summary:</strong> the app has no developer server and no
+online accounts. Your books live only on your phone, encrypted. The app
+shows no ads, uses no analytics, and does not sell or share your data.
+Nothing leaves your device unless you choose one of the two optional
+features in section 3.</p>
+<h2 id="data-the-app-stores-and-why">1. Data the app stores and why</h2>
+<p>The app is a bookkeeping tool. Everything you enter — expenses,
+invoices, bills, customers, vendors, employees and payroll figures, bank
+entries, fixed assets, journals, receipt photos, budgets and settings —
+is stored <strong>only on your device</strong>, in the app’s private
+storage, in an <strong>encrypted database</strong> (the key is generated
+on your phone and never leaves it). Printed PDF documents are
+additionally locked with your login password (AES-256): the same
+password opens them.</p>
+<p>User accounts in the app are local accounts on your phone. There is
+no default account: on first launch you create the administrator account
+yourself. Passwords are stored only as salted PBKDF2 hashes. An
+on-device audit log records sign-ins and bookkeeping actions (who did
+what, when) — it never records passwords or codes.</p>
+<h2 id="permissions">2. Permissions</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERNET</td>
+<td>Runs the app’s own pages locally on your phone (127.0.0.1), and
+carries the two optional features in section 3. With those features
+unused, no data is transmitted.</td>
+</tr>
+<tr>
+<td>USE_BIOMETRIC</td>
+<td>Optional app lock with fingerprint/face or your screen lock. Android
+handles the biometrics; the app never sees them.</td>
+</tr>
+</tbody>
+</table>
+<p>Receipt photos are taken with your phone’s <strong>camera
+app</strong> (the app itself has no camera permission) and read by
+<strong>on-device</strong> text recognition (Google ML Kit, bundled
+model — works offline; the image is not uploaded).</p>
+<h2 id="optional-features-that-send-data-off-the-device">3. Optional
+features that send data off the device</h2>
+<p>Both are off until you turn them on, and both use <strong>your own
+accounts</strong>, not ours:</p>
+<ol type="1">
+<li><strong>AI insights.</strong> You may paste your own Google Gemini
+or OpenAI API key and ask questions about your books. Only then is the
+question and the relevant expense data sent, over HTTPS, directly to the
+provider you chose. The provider’s own privacy policy governs that
+request. The developer runs no server and receives nothing. Your API key
+is stored encrypted on the device (Android Keystore) and sent only to
+that provider.</li>
+<li><strong>E-mailed sign-in codes.</strong> The administrator may enter
+their own e-mail account (e.g. a Gmail app password) on the Admin page.
+After that, each login or sign-up sends a 6-digit code to the user’s
+e-mail address <strong>through the administrator’s own mail
+account</strong>, over TLS. The mail password is stored only in the
+phone’s encrypted database. If no mail account is entered, nothing is
+ever e-mailed and sign-in works without codes.</li>
+</ol>
+<h2 id="backups">4. Backups</h2>
+<p>The app keeps rotating <strong>encrypted</strong> backups in its
+private storage and lets you export an encrypted backup file to save
+wherever you choose (Google Drive, e-mail, a computer). Exported backups
+stay encrypted; you choose where they go, and that destination’s own
+policy applies.</p>
+<h2 id="data-deletion">5. Data deletion</h2>
+<p>Everything is yours to delete: delete entries in the app (a recycle
+bin asks for confirmation and allows restore), or delete all data at
+once via Android Settings → Apps → Expense Tracker → Storage →
+<strong>Clear data</strong>, or uninstall the app. Because there is no
+server, there is nothing for the developer to delete — we never had your
+data. Data you chose to send to an AI provider is governed by that
+provider’s deletion process.</p>
+<h2 id="children">6. Children</h2>
+<p>The app is a business bookkeeping tool intended for adults (18+). It
+is not directed at children and collects no data from anyone.</p>
+<h2 id="changes-and-contact">7. Changes and contact</h2>
+<p>Changes to this policy will appear at this address with a new date.
+Questions: <strong>juelharold@gmail.com</strong> — Joel Harold Onyango,
+H0J-MQH Holdings Limited, Pesaka, Floor 4, Northern Bypass, Kahawa West,
+Nairobi, Kenya.</p>
+</body>
+</html>
